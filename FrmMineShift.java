@@ -53,7 +53,23 @@ public class FrmMineShift extends JFrame {
 		});
 		
 	}
-
+	
+/*
+	player one turn
+	
+	1 - slide stone
+	2 - rotate tile
+	what type of move? 1
+	
+	1 selected
+		What stone would you like to move? M
+		Where would you like to move it to? A2_1
+	
+	2 selected
+		What tile would you like to move? A1
+		Clockwise of counter clockwise? CW
+	
+	 */
 
 
 	public FrmMineShift() {
