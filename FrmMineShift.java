@@ -1,6 +1,6 @@
 package mineShift;
 
-import java.awt.BorderLayout;
+import java.awt.BorderLayout; 
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -8,7 +8,6 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -28,7 +27,7 @@ public class FrmMineShift extends JFrame {
 	int turn = 1; // Total Turn 
 	
 	ImageIcon icon = new ImageIcon(FrmMineShift.class.getResource("/Kaleb.jpg")); // Image to use
-
+	
 	
 	public static void main(String[] args) {
 		
@@ -53,8 +52,9 @@ public class FrmMineShift extends JFrame {
 		});
 		
 	}
+
 	
-/*
+	/*
 	player one turn
 	
 	1 - slide stone
@@ -170,9 +170,11 @@ public class FrmMineShift extends JFrame {
 				if(count == 1) {  
 					
 					for(int i = 0; i < 1; i++) {
-					
+						
+						ConfirmDialog confirm = new ConfirmDialog();
 						count--;
 						lblMoveLeft.setText("Move Left: " + count);
+						
 						if(count == 0) {
 						
 							btnMove.setEnabled(false);
@@ -186,8 +188,10 @@ public class FrmMineShift extends JFrame {
 					
 					for(int i = 0; i < 1; i++) {
 						
+						ConfirmDialog confirm = new ConfirmDialog();
 						count--;
 						lblMoveLeft.setText("Move Left: " + count);
+						 
 						if(count == 0) {
 							
 							btnMove.setEnabled(false);
@@ -201,8 +205,10 @@ public class FrmMineShift extends JFrame {
 					
 					for(int i = 0; i < 1; i++) {
 						
+						ConfirmDialog confirm = new ConfirmDialog(); 
 						count--;
 						lblMoveLeft.setText("Move Left: " + count);
+						
 						if(count == 0) {
 							
 							btnMove.setEnabled(false);
