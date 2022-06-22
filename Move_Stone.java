@@ -1,5 +1,7 @@
 package oppMineShift;
 
+import javax.swing.JOptionPane;
+
 public class Move_Stone {
 	//constants
 		//tile id's				 	//	1 1 2 2 1 1 2 2  2 1 2 1 
@@ -396,39 +398,46 @@ public class Move_Stone {
 		//outer walls
 		if (Start_Can_Move == false){
 			Can_Stone_Move = false;
+			JOptionPane.showMessageDialog(null, "You were block by a wall at your destiniation", "Error", JOptionPane.INFORMATION_MESSAGE);
 			System.out.println("Error [Outer walls Start_move]");
 		}
 		//outer walls
 		if (End_Can_Move == false){
 			Can_Stone_Move = false;
+			JOptionPane.showMessageDialog(null, "You were block by a wall trying to leave", "Error", JOptionPane.INFORMATION_MESSAGE);
 			System.out.println("Error [Outer walls End_move]");
 		}
 
 		//Diagonal
 		if (Diagonal == false){
 			Can_Stone_Move = false;
+			JOptionPane.showMessageDialog(null, "you are not a chess bishop", "Error", JOptionPane.INFORMATION_MESSAGE);
 			System.out.println("Error [Diagonal]");
 		}
 
 		//inner walls
 		if (Walled == false){
 			Can_Stone_Move = false;
+			JOptionPane.showMessageDialog(null, "You were block by a wall", "Error", JOptionPane.INFORMATION_MESSAGE);
 			System.out.println("Error [Walled]");
 		}
 
 		//long Jumping
 		if (Stone_Jump == false){
 			Can_Stone_Move = false;
+			JOptionPane.showMessageDialog(null, "No", "Error", JOptionPane.INFORMATION_MESSAGE);
 			System.out.println("Error [long Jumping]");
 		}
 
 		// Stone stacking
 		if ((ends.equals(P1_SP[0]))||(ends.equals(P1_SP[1]))||(ends.equals(P1_SP[2]))||(ends.equals(P1_SP[3]))||(ends.equals(P1_SP[3]))){
 			Can_Stone_Move = false;
+			JOptionPane.showMessageDialog(null, "this isn't Tetris", "Error", JOptionPane.INFORMATION_MESSAGE);
 			System.out.println("Error [Stone stacking]");
 		}else if ((ends.equals(P2_SP[0]))||(ends.equals(P2_SP[1]))||(ends.equals(P2_SP[2]))||(ends.equals(P2_SP[3]))||(ends.equals(P2_SP[3]))){
-				Can_Stone_Move = false;
-				System.out.println("Error [Stone stacking]");
+			Can_Stone_Move = false;
+			JOptionPane.showMessageDialog(null, "this isn't Tetris", "Error", JOptionPane.INFORMATION_MESSAGE);
+			System.out.println("Error [Stone stacking]");
 		}
 		//----------------------------------------------------------------------------------------
 	// this sets the new stone positions to the Output variable
