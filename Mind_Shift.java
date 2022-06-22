@@ -4,6 +4,7 @@ import java.util.Random;
 
 import oppMineShift.Move_Stone;
 import oppMineShift.Rotate_Tile;
+import javax.swing.JOptionPane;
 
 public class Mind_Shift {
 
@@ -167,6 +168,7 @@ public class Mind_Shift {
 						Tile_to_Rotate_TID = TID_S[5];
 						Tile_to_Rotate = "B4";
 					}else {
+						JOptionPane.showMessageDialog(null, "Invalid Tile selection", "Error", JOptionPane.INFORMATION_MESSAGE);
 						System.out.println("Error [Tile selection]");//this errors if the player put in a non valid tile to rotate
 					}//end of else
 
@@ -176,6 +178,7 @@ public class Mind_Shift {
 					Rotation_Direction = Input_2;
 
 					}else {
+						JOptionPane.showMessageDialog(null, "Invalid Rotation Direction", "Error", JOptionPane.INFORMATION_MESSAGE);
 						System.out.println("Error [Rotation Direction]");//this errors if the player put in a non valid Rotation Direction
 					}//end of else
 
