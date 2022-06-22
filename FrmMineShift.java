@@ -510,7 +510,7 @@ public class FrmMineShift extends JFrame {
 				
 				
 				btnPlay.setEnabled(false);
-				JOptionPane.showMessageDialog(null, "mine shift rules", "Mine Shift", JOptionPane.INFORMATION_MESSAGE, icon);
+				//JOptionPane.showMessageDialog(null, "mine shift rules", "Mine Shift", JOptionPane.INFORMATION_MESSAGE, icon);
 				
 			}
 			
