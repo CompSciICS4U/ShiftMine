@@ -1,4 +1,4 @@
-package mineShift;
+package mainShift;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
