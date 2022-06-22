@@ -62,7 +62,7 @@ public class Mind_Shift {
 							   TID_w[0], //B3
 							   TID_w[0]};//B4
 	
-	static	String [] P1_SP = {"A1_1","A3_2","A3_3","A3_4"}; //P1 stone positions
+	static	String [] P1_SP = {"A1_1","A1_2","A1_3","A1_4"}; //P1 stone positions
 	static	String [] P1_SL = {"M","N","W","V"}; 			 //P1 stone Letter
 
 	static	String [] P2_SP = {"B4_1","B4_2","B4_3","B4_4"}; //P2 stone positions
