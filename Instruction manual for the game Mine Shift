@@ -1,0 +1,41 @@
+Instruction manual for the game Mine Shift
+
+Player 1 controls M, N, W, V
+Player 2 controls  B, D, P, Q
+
+Each player gets 3 move per turn
+These moves can either be, rotate a tile or move a stone (letter).
+
+After pressing the “Play” button select what type of move you would like to make.
+
+The game will then prompt you to input different information depending on what move you picted.
+
+If you picked “Rotate a Tile” than
+For the first text box simply put the tiles location for example A2 or B4.
+For the second text box either input clockwise (CW) or Counter clockwise (CCW).
+Upper of lowercase both work (cw or CW)
+
+If you picked “Move a letter” than
+For the first text box simply put the letter that you want to move (M or Q).
+For the second text box input the location you like to move it to, by first inputting the destination tile followed by an underscore and then the position number on the tile.
+An example A3_2
+
+The tile position number look like this.
+ +---+---+
+ |[1]|[2]|
+ +---+---+
+ |[3]|[4]|
+ +---+---+
+
+Example of tile location 
+	     1          2	         3   	      4
+   +---+---+  +   +   +  +---+   +
+   | M   N            |      |    
+ A +   +   +  +   +---+  +   +---+
+   | V   W        |              |
+   +   +   +  +---+   +  +    +   +
+              +---+---+  +   +   +  +---+---+
+	            |                  |  |        
+ B	          +   +   +  +   +---+  +   +   +
+	            |          |                  |
+	            +   +   +  +---+   +  +---+---+
