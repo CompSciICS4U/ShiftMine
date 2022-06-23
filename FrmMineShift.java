@@ -299,7 +299,7 @@ public class FrmMineShift extends JFrame {
 				
 				//sets the text box about what type of input is needed
 				lbl_Input_1.setText("What tile would you like to move?");
-				lbl_Input_2.setText("Clockwise of counter clockwise?");
+				lbl_Input_2.setText("Clockwise or counter clockwise?");
 				
 				//sets hints
 				lbl_Input_1_ex.setText(" A2");
